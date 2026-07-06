@@ -30,7 +30,10 @@ No since I was using AI directly and telling on how I wanted. For now it looks g
 **a. Constraints and priorities**
 
 - What constraints does your scheduler consider (for example: time, priority, preferences)?
+Time and priority.
+
 - How did you decide which constraints mattered most?
+Priority matters most because this is a pet care app. Missing a high-priority task like medication is a real-world problem; missing grooming is just a minor delay. Time is the hard constraint—you can only schedule the minutes you actually have—so it acts as the cutoff. Priority simply decides which tasks survive that cutoff.
 
 **b. Tradeoffs**
 

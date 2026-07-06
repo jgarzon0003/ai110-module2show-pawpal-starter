@@ -67,7 +67,15 @@ pytest --cov
 Sample test output:
 
 ```
-# Paste your pytest output here
+================================================================================================================= test session starts ==================================================================================================================
+platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\Jhostin\Documents\Codepath\AI 110\Week 4 Project\ai110-module2show-pawpal-starter
+plugins: anyio-4.14.1
+collected 10 items                                                                                                                                                                                                                                      
+
+tests\test_pawpal.py ..........                                                                                                                                                                                                                   [100%]
+
+================================================================================================================== 10 passed in 0.04s ==================================================================================================================
 ```
 
 ## 📐 Smarter Scheduling
@@ -76,10 +84,10 @@ Sample test output:
 
 | Feature | Method(s) | Notes |
 |---------|-----------|-------|
-| Task sorting | | e.g., by priority, duration |
-| Filtering | | e.g., skip tasks if time runs out |
-| Conflict handling | | e.g., overlapping time slots |
-| Recurring tasks | | e.g., daily vs. weekly |
+| Task sorting | `Scheduler.sort_by_priority`, `Scheduler.sort_by_time` | Sorts by priority (high → low) for building the plan, or chronologically by `start_time` for display; unscheduled tasks sort last. |
+| Filtering | `Owner.filter_tasks`, `Scheduler.assign_time_slots` | `filter_tasks` filters by pet name and/or completion status; `assign_time_slots` skips (rather than schedules) tasks once the owner's available minutes run out, marking them "Not enough time available today". |
+| Conflict handling | `Scheduler.detect_conflicts` | Compares adjacent tasks (by start time) across pets and returns a warning string for each pair whose time windows overlap, without raising. |
+| Recurring tasks | `Task.next_occurrence`, `Pet.complete_task` | Completing a "daily"/"weekly" task via `complete_task` marks it done and automatically creates+adds the next occurrence, with `due_date` advanced by a day or a week. |
 
 ## 📸 Demo Walkthrough
 
