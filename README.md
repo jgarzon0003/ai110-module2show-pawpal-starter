@@ -93,10 +93,9 @@ tests\test_pawpal.py .....................                                      
 
 Describe your app in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Add one or more pets under **Pets** by entering a name and species, then clicking **Add pet**.
+2. Select a pet under **Tasks**, fill in the task title, category, duration, and priority, then click **Add task**. Repeat for as many tasks as you like; added tasks appear in a table below.
+3. Click **Generate schedule** under **Build Schedule** to have the `Scheduler` sort the pet's tasks by priority, fit them into the owner's available time window, and order the result chronologically.
+4. Review the schedule table (start time, duration, priority, and the reason each task was placed where it was), any conflict warnings, and any tasks that couldn't be scheduled due to insufficient time.
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or link to a demo video here -->

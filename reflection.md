@@ -47,12 +47,19 @@ Priority matters most because this is a pet care app. Missing a high-priority ta
 **a. How you used AI**
 
 - How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
+I used it mainly to brainstorm and refactor code.
+
 - What kinds of prompts or questions were most helpful?
+Two shot prompt and making it question possible edge cases were helpful.
+
 
 **b. Judgment and verification**
 
 - Describe one moment where you did not accept an AI suggestion as-is.
+When trying to add unneccesary code.
+
 - How did you evaluate or verify what the AI suggested?
+It had a long chat. Also the app was not running properly.
 
 ---
 
@@ -61,12 +68,19 @@ Priority matters most because this is a pet care app. Missing a high-priority ta
 **a. What you tested**
 
 - What behaviors did you test?
+    - Add task
+    - Add pet 
+    - Add date
 - Why were these tests important?
+These are important since owners want to planify a task for their pets on some dates.
+
 
 **b. Confidence**
 
-- How confident are you that your scheduler works correctly?
+- How confident are you that your scheduler works correctly? From a 1-5, I would say a 4.
+
 - What edge cases would you test next if you had more time?
+Multiple owners with same name dog trying a similar task. 
 
 ---
 
@@ -75,11 +89,15 @@ Priority matters most because this is a pet care app. Missing a high-priority ta
 **a. What went well**
 
 - What part of this project are you most satisfied with?
+The testing
 
 **b. What you would improve**
 
 - If you had another iteration, what would you improve or redesign?
+Play around with more test cases.
+
 
 **c. Key takeaway**
 
 - What is one important thing you learned about designing systems or working with AI on this project?
+UML helps to give structure on how the code connects and how it should work.
