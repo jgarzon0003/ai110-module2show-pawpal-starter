@@ -7,10 +7,21 @@
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
 
+My initial design uses four classes:
+
+- **Owner** — stores the owner's name and scheduling constraints (available time window and total minutes per day). Represents the limits the plan has to respect.
+- **Pet** — stores the pet's name/species and holds the list of `Task`s that apply to it, linking care tasks to a specific animal.
+- **Task** — represents one pet-care item (walk, feeding, meds, enrichment, grooming): title, category, `duration_minutes`, and `priority`. Once scheduled, it also carries its assigned `start_time` and a short reason string explaining why it was placed (or skipped).
+- **Scheduler** — the only class with real logic. Takes an `Owner`'s constraints and a `Pet`'s tasks, sorts/filters by priority and available time, assigns time slots, and returns an ordered daily plan with reasoning attached to each task.
+
+`Owner` and `Pet` describe the people/animals, `Task` describes the work, and `Scheduler` is the decision-maker that turns tasks + constraints into a plan.
+
 **b. Design changes**
 
 - Did your design change during implementation?
 - If yes, describe at least one change and why you made it.
+
+No since I was using AI directly and telling on how I wanted. For now it looks good. Thus, I made no change.
 
 ---
 
